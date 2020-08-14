@@ -1,0 +1,9 @@
+.square-button {
+    border: 1px outset blue;
+    background-color: lightBlue;
+    height:100px;
+    width:100px;
+    cursor:pointer;
+	margin: 10px;
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8primary">
+		<meta name="viewport" content="width=device-width",
+			initial-scale=1.0">
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet"
+		href="style.css">
+		<link rel="stylesheet"
+		href="node_modules/bootstrap/dist/css/bootstrap.css">
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+		  <a class="navbar-brand" href="#">
+			<img src="tictactoelogo.jpg" width="30" height="30" alt="">
+		  </a>
+		<a class="navbar-brand" href="index.html">Tic Tac Toe</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+											   data-target="#navbarNavDropdown" 
+											   aria-controls="navbarNavDropdown"
+											   aria-expanded="false"
+											   aria-label="Toggle navigation">
+
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="requestinfo.html">Request Info</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+												 role="button"
+												 data-toggle="dropdown"
+												 aria-haspopup="true"
+												 aria-expanded="false">
+				Dropdown
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					
+					<a class="dropdown-item" href="https://getbootstrap.com"
+						target="_blank">Bootstrap Home Page</a>
+					<a class="dropdown-item" href="https://www.promineotech.com"
+						target="_blank">Promineo Tech</a>
+					<a class="dropdown-item" href="https://promineotech.moodle.school"
+						target="_blank">Promineo Tech Moodle</a>
+
+					<div class="dropdown-divider"></div>
+
+					<a class="dropdown-item" href="https://stackoverflow.com"
+						target="_blank" >Stack Overflow</a>
+					<a class="dropdown-item" href="https://www.freecodecamp.org"
+						target="_blank">Free Code Camp</a>
+					<a class="dropdown-item" href="https://developer.mozilla.org/en-US/"
+						target="_blank">MDN Docs</a>
+					
+				</li>
+				
+				<li class="nav-item">
+					<button type="button" class="btn btn-primary">
+						Profile <span class="badge badge-light">9</span>
+						<span class="sr-only">unread messages</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+
+	<main>
+		<div class="container">
+				<h1 id='header-1'> Tic Tac Toe <h1>
+				<h3 id='header-3'> X goes first...</h3>
+		</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs">
+						<button id='square1' class= "square-button btn btn-primary btn-lg
+						 square row1 col1 diag1"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square2' class= "square-button btn btn-primary btn-lg
+						 square row1 col2"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square3' class= "square-button btn btn-primary btn-lg
+						 square row1 col3 diag2"></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs">
+						<button id='square4' class= "square-button btn btn-primary btn-lg
+						 square row2 col1"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square5' class= "square-button btn btn-primary btn-lg
+						 square row2 col2 diag1 diag2"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square6' class= "square-button btn btn-primary btn-lg
+						 square row2 col3"></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs">
+						<button id='square7' class= "square-button btn btn-primary btn-lg
+						 square row3 col1 diag2"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square8' class= "square-button btn btn-primary btn-lg
+						 square row3 col2"></button>
+					</div>
+					<div class="col-xs">
+						<button id='square9' class= "square-button btn btn-primary btn-lg
+						 square row3 col3 diag1"></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+			<div class="col-xs">
+				<button id='reset-board'>Start a New Game</button>
+			</div>
+			</div>
+			
+			<br><br><br><br>
+			<div class="container">
+				<table class="table table-striped table-bordered tablehover">
+					<thead class="thead-dark">
+						<tr>
+							<th>Project 5 Criteria</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tr class="">
+						<td>A heading should say whether it is X's or O's turn
+							and change with each move made.</td>
+						<td> &check; </td>
+					</tr>
+					<tr class="">
+						<td>Create a tic-tac-toe grid using your HTML element of
+							choice. When a cell in the grid is clicked, an X or
+							O should appear in that spot depending on whose turn
+						it is.</td>
+						<td> &check;</td>
+					</tr>
+					<tr class="">
+						<td>A button should be available to clear the grid and
+							restart the game.</td>
+						<td> &check; </td>
+					</tr>
+					<tr class="">
+						<td>When a player has won, or the board is full and the
+							game results in a draw, a Bootstrap banner should
+							appear across the screen announcing the winner.</td>
+						<td> &check; </td>
+					</tr>
+				</table>	
+			</div>
+
+	</main>
+	
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<script src="tictactoev2.js"></script>
+	</body>
+
+
+	
+</html>
